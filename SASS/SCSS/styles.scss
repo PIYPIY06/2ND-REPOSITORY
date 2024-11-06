@@ -1,0 +1,48 @@
+//ФАЙЛ СТИЛЕЙ
+@import "null.scss";
+
+$fz:80px;
+$color_1:green;
+
+.tplborder{
+  border-bottom:5px dashed red;
+}
+
+@mixin fontz($f,$c){
+  font-size: $f;
+  color:$c;
+}
+
+
+.block {
+  width: 300px/960px *100%;
+  background-color: gray;
+  line-height: 20px;
+  span {
+    color: brown;
+  }
+  >p {
+    color: blue;
+  }
+  &.block--big{
+    font-size:$fz;
+  }
+}
+
+.link{
+  color:rgb(255, 37, 26);
+  text-decoration: underline;
+  font-size:$fz;
+  .block &{
+    font-size:$fz;
+  }
+  &:hover{
+    color:green;
+  }
+  @extend .tplborder;
+}
+
+.link-2{
+  @include fontz(50px,red);
+
+}

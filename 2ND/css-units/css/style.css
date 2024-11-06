@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* Обнуление */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------ */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.example {
+    padding: 80px 0;
+}
+
+.example__container {
+    padding: 0 15px;
+    margin: 0 auto;
+    /*Переводим в REM*/
+    /*делим ширину по макету(1020+30px)*/
+    /*на 16 ( размер шрифта по умолчанию)*/
+    max-width: 65.625rem;
+    position: relative;
+}
+
+.example__container:before {
+    content: '';
+    background: url("../img/decor.svg") 0 0 no-repeat;
+}

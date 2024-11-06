@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.tplborder, .link {
+  border-bottom: 5px dashed red;
+}
+
+.block {
+  width: 31.25%;
+  background-color: gray;
+  line-height: 20px;
+}
+.block span {
+  color: brown;
+}
+.block > p {
+  color: blue;
+}
+.block.block--big {
+  font-size: 80px;
+}
+
+.link {
+  color: rgb(255, 37, 26);
+  text-decoration: underline;
+  font-size: 80px;
+}
+.block .link {
+  font-size: 80px;
+}
+.link:hover {
+  color: green;
+}
+
+.link-2 {
+  font-size: 50px;
+  color: red;
+}
+/*# sourceMappingURL=styles-dist.css.map */
